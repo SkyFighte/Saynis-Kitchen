@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sayani's Kitchen</title>
+  <center>
+    <h1>OPEN ON SUNDAYS 1PM-8PM
+    </h1>
+  </center>
+  <style>
+    /* Add some basic styles for the website */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #d22828;
+      color: #f0e404;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .menu-item {
+      margin-bottom: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+    .menu-item h2 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sayanis Kitchen</h1>
+  </header>
+  <div class="container">
+    <div id="menu-items"></div>
+  </div>
+
+  <script>
+    // Define an array of menu items
+    var menuItems = [
+      { name: "Aloo Posto", price: 190 },
+      { name: "Cholar Dal", price: 50 },
+      { name: "Bengali Thali VEG", price: 200 },
+      { name: "Bengali Thali NON-VEG", price: 300 }
+      ,{ name: "Bengali Paulou", price: 300 }
+      ,{ name: "Bengali Chicken Biryani", price: 300 }
+      // Add more menu items as needed
+    ];
+
+    // Get the container where menu items will be displayed
+    var menuContainer = document.getElementById("menu-items");
+
+    // Display menu items on the website
+    menuItems.forEach(function(item) {
+      var menuItemDiv = document.createElement("div");
+      menuItemDiv.classList.add("menu-item");
+
+      var itemName = document.createElement("h2");
+      itemName.textContent = item.name;
+      menuItemDiv.appendChild(itemName);
+
+      var itemPrice = document.createElement("p");
+      itemPrice.textContent = "₹" + item.price;
+      menuItemDiv.appendChild(itemPrice);
+
+      menuContainer.appendChild(menuItemDiv);
+    });
+  </script>
+  
+  <center>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMdkRYMFjOTXz3mByDroaBZfESBwjosRot3g&usqp=CAU">
+  <br>
+  <br>
+  <h1>ভ্রমনের জন্য ধন্যবাদ</h1>
+  <button onclick="makeCall()">Confirm Order</button>
+
+  <!-- JavaScript section -->
+  <script>
+      function makeCall() {
+          // Replace the phone number with the desired number you want to call
+          var phoneNumber = "+918390060541";
+          
+          // Check if the browser supports the tel: protocol
+          if ("href" in HTMLAnchorElement.prototype) {
+              // Create an anchor element with the tel: protocol
+              var link = document.createElement('a');
+              link.href = "tel:" + phoneNumber;
+              
+              // Simulate a click on the anchor element
+              link.click();
+          } else {
+              // Display an error message if the tel: protocol is not supported
+              alert("Phone call is not supported in this browser.");
+          }
+      }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+  <footer>
+    <p>Made by  Debarshi</p>
+</footer>
+</body>
+</html>
+
+
+
+</center>
+ 

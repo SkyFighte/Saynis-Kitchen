@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #d22828;
+    color: #f0e404;
+    padding: 20px;
+    text-align: center;
+  }
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  h1 {
+    text-align: center;
+  }
+  .menu-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  .menu-item h2 {
+    margin-top: 0;
+  }
